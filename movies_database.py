@@ -8,7 +8,7 @@ DB_NAME = 'movies_database.db'
 def print_query(view_name:str):
     ''' Prints the specified view from the database in a table '''
     # Set up the connection to the database
-    db = sqlite3.connect(DB_NAME)
+    db = sqlite3.connect('movies_database.db')
     cursor = db.cursor()
     # Get the results from the view
     sql = "SELECT * FROM '" + view_name + "'"
@@ -22,3 +22,14 @@ def print_query(view_name:str):
     print(tabulate(results,headings))
     db.close()
     
+    menu_choice =''
+    while menu_choice = input('Welcome to the Movies database\n\n'
+                              'Type the letter for the information you want:\n'
+                              'A: All movies made in Japan\n '
+                              'B: title, director & studio of movies made by Disney and Pixar\n'
+                              'C: All the movies released in the 90s\n'
+                              'D: Title and ratings of movies made by Warner Bros\n'
+                              'E: title, country & studio of all movies made in NZ\n'
+                              'F: title ratings & release date for all movies\n'
+                              'G: title, studio & director of')
+                              
