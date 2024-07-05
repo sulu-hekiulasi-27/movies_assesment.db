@@ -24,7 +24,7 @@ def print_query(view_name:str):
     
 menu_choice =''
 while menu_choice != 'Z':
-   menu_choice = input('Welcome to the Movies database\n\n'
+    menu_choice = input('Welcome to the Movies database\n\n'
                         'Type the letter for the information you want:\n'
                         'A: All movies made in Japan\n '
                         'B: title, director & studio of movies made by Disney and Pixar\n'
@@ -34,24 +34,24 @@ while menu_choice != 'Z':
                         'F: title ratings & release date for all movies\n'
                         'G: title, studio, director & ratings of all movies made by Disney\n'
                         'H: all information for movies made by Illumination Entertainment\n'
-                        'I: all movies released in the 2000s'
+                        'I: all movies released in the 2000s\n'
                         'Z: Exit\n\nType option here: ')
-menu_choice = menu_choice.upper()
-if menu_choice == 'A':
-    print_query('Movies made In Japan')
-elif menu_choice == 'B':
-    print_query('Disney & Pixar movies')
-elif menu_choice == 'C':
-    print_query('Released in the 90s')
-elif menu_choice == 'D':
-    print_query('Warner Bros movies')
-elif menu_choice == 'E':
-    print_query('Movies made in NZ')
-elif menu_choice == 'F':
-    print_query('title, ratings & release date for all movies')
-elif menu_choice == 'G':
-    print_query('Movies made by Walt Disney Studios')
-elif menu_choice == 'H':
-    print_query('Illumination Entertainment All Information')
-elif menu_choice == 'I':
-    print_query('All movies released in the 2000s')
+    menu_choice = menu_choice.upper()
+    if menu_choice == 'A':
+        print_query('Movies made In Japan')
+    elif menu_choice == 'B':
+        print_query('Disney & Pixar movies')
+    elif menu_choice == 'C':
+        print_query('Released in the 90s')
+    elif menu_choice == 'D':
+        print_query('Warner Bros movies')
+    elif menu_choice == 'E':
+        print_query('Movies made in NZ')
+    elif menu_choice == 'F':
+        print_query('title, ratings & release date for all movies')
+    elif menu_choice == 'G':
+        print_query('Movies made by Walt Disney Studios')
+    elif menu_choice == 'H':
+        print_query('Illumination Entertainment All Information')
+    elif menu_choice == 'I':
+        print_query('All movies released in the 2000s')
