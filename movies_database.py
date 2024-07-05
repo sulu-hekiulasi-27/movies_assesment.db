@@ -28,7 +28,7 @@ while menu_choice != 'Z':
                         'Type the letter for the information you want:\n'
                         'A: All movies made in Japan\n '
                         'B: title, director & studio of movies made by Disney and Pixar\n'
-                        'C: All the movies released in the 90s\n'
+                        'C: All the movies released in the 90s & 1900s\n'
                         'D: Title and ratings of movies made by Warner Bros\n'
                         'E: title, country & studio of all movies made in NZ\n'
                         'F: title ratings & release date for all movies\n'
@@ -42,13 +42,13 @@ while menu_choice != 'Z':
     elif menu_choice == 'B':
         print_query('Disney & Pixar movies')
     elif menu_choice == 'C':
-        print_query('Released in the 90s')
+        print_query('Released in the 90s & 1900s ')
     elif menu_choice == 'D':
         print_query('Warner Bros movies')
     elif menu_choice == 'E':
         print_query('Movies made in NZ')
     elif menu_choice == 'F':
-        print_query('title, ratings & release date for all movies')
+        print_query('All movies')
     elif menu_choice == 'G':
         print_query('Movies made by Walt Disney Studios')
     elif menu_choice == 'H':
